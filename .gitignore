@@ -1,0 +1,18 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.local
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Future proofing (Node/Build tools)
+node_modules/
+dist/
+build/
