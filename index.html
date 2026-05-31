@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleyton Rodrigues Soares | Senior Software Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0B0F19',
+                        cardBg: '#131926',
+                        azureBlue: '#007FFF',
+                        azureCyan: '#00E5FF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0B0F19;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(0, 127, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-azureBlue/30 selection:text-white">
+
+    <!-- ─── HEADER / NAVIGATION ─── -->
+    <header class="fixed top-0 left-0 w-full bg-darkBg/80 backdrop-blur-md z-50 border-b border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- CRS logo with cloud icon -->
+            
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative flex items-center justify-center w-12 h-12 rounded-lg bg-azureBlue/10 border border-azureBlue/30 group-hover:border-azureCyan/50 transition-colors">
+                    <!-- SVG cloud adjusted to serve as the perfect frame -->
+                    <svg class="w-10 h-10 text-azureBlue/40 group-hover:text-azureBlue/60 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                    </svg>
+                    
+                    <!-- Centered text element with highlighted cyan curly braces and blank CRS -->
+                    <div class="absolute inset-0 flex items-center justify-center text-[11px] font-mono font-bold tracking-wide select-none">
+                        <span class="text-azureCyan">{</span><span class="text-white mx-[1px]">CRS</span><span class="text-azureCyan">}</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-sm font-bold text-white tracking-wide uppercase">Cleyton Rodrigues Soares</span>
+                    <span class="text-[11px] text-gray-400">Senior Software Engineer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-gray-400">
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                <a href="./assets/Cleyton_Rodrigues_Soares_Senior_Software_Engineer_Resume.pdf" target="_blank" class="px-4 py-2 rounded-md bg-transparent border border-azureBlue text-azureCyan hover:bg-azureBlue/10 transition-all font-semibold whitespace-nowrap">Get Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ─── MAIN CONTENT CONTAINER ─── -->
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- LEFT COLUMN (Hero, Metrics and Projects) -->
+        <section class="lg:col-span-7 flex flex-col gap-12">
+            
+            <!-- 1. HERO SECTION -->
+            <div id="hero" class="flex flex-col gap-6 scroll-mt-28">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Architecting Scalable <span class="text-transparent bg-clip-text bg-gradient-to-r from-azureBlue to-azureCyan">Cloud-Native Solutions</span> for Enterprise Platforms
+                </h1>
+                <p class="text-base text-gray-400 max-w-xl leading-relaxed">
+                    Hi, I'm Cleyton. A Senior Software Engineer with 6+ years of experience transforming legacy systems into high-scale, event-driven architectures using .NET, Azure, and Kubernetes. Based in Brazil, working globally.
+                </p>
+                <div class="flex items-center gap-4 mt-2">
+                    <a href="#projects" class="px-6 py-3 rounded-md bg-azureBlue hover:bg-azureBlue/80 text-white font-medium shadow-lg shadow-azureBlue/20 transition-all">Explore My Work</a>
+                    <a href="#contact" class="px-6 py-3 rounded-md bg-transparent border border-gray-700 hover:border-gray-500 text-gray-300 font-medium transition-all">Get In Touch</a>
+                </div>
+            </div>
+
+            <!-- 2. METRICS GRID -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 rounded-xl bg-cardBg border border-gray-800 text-center glow-effect">
+                    <span class="block text-2xl font-bold text-azureCyan">6+</span>
+                    <span class="text-xs text-gray-400">Years Exp</span>
+                </div>
+                <div class="p-4 rounded-xl bg-cardBg border border-gray-800 text-center glow-effect">
+                    <span class="block text-2xl font-bold text-azureCyan">3M+</span>
+                    <span class="text-xs text-gray-400">Daily Trans.</span>
+                </div>
+                <div class="p-4 rounded-xl bg-cardBg border border-gray-800 text-center glow-effect">
+                    <span class="block text-2xl font-bold text-azureCyan">80%</span>
+                    <span class="text-xs text-gray-400">Fast Deploy</span>
+                </div>
+                <div class="p-4 rounded-xl bg-cardBg border border-gray-800 text-center glow-effect">
+                    <span class="block text-xl font-bold text-azureCyan pt-1">FIU USA</span>
+                    <span class="text-xs text-gray-400">Background</span>
+                </div>
+            </div>
+
+            <!-- 3. ENGINEERING SHOWCASE (PROJECTS) -->
+            <div id="projects" class="flex flex-col gap-6 scroll-mt-28">
+                <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-3">Engineering Showcase</h2>
+                
+                <!-- Card Project 1 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-gray-800 flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-gray-700 transition-all">
+                    <div class="flex-1 flex flex-col gap-4">
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-azureCyan">Anonymized Case Study</span>
+                            <h3 class="text-xl font-bold text-white mt-1">High-Scale Event-Driven Integration Engine</h3>
+                            <p class="text-xs text-gray-400 mt-1">Role: Lead Full-Stack Engineer</p>
+                        </div>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Spearheaded the architectural modernization of an enterprise integration platform processing millions of daily critical events. Designed and delivered 8 resilient microservices implementing advanced asynchronous patterns to ensure robust data telemetry, high availability, and zero message loss.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-300">
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">.NET</span>
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">Angular</span>
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">Azure Service Bus</span>
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">Kubernetes</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 border-t border-gray-800/60 pt-3 mt-1">
+                            <div>
+                                <span class="block text-lg font-bold text-white">3M+</span>
+                                <span class="text-xs text-gray-500">Daily Transactions</span>
+                            </div>
+                            <div>
+                                <span class="block text-lg font-bold text-white">80%</span>
+                                <span class="text-xs text-gray-500">Faster CI/CD Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Minimalist Architecture Diagram in Embedded CSS -->
+                    <div class="w-full md:w-44 flex items-center justify-center bg-darkBg/40 border border-gray-800/80 rounded-xl p-4 opacity-70 group-hover:opacity-100 transition-opacity">
+                        <div class="flex flex-col gap-2 text-[10px] font-mono text-gray-400 w-full">
+                            <div class="p-1 border border-green-500/40 rounded text-center bg-green-500/5 text-green-400">APIs</div>
+                            <div class="text-center text-xs text-gray-600">➔</div>
+                            <div class="p-1 border border-purple-500/40 rounded text-center bg-purple-500/5 text-purple-400">Message Brokers</div>
+                            <div class="text-center text-xs text-gray-600">➔</div>
+                            <div class="p-1 border border-azureBlue/40 rounded text-center bg-azureBlue/5 text-azureCyan">Cloud</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Project 2 -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-gray-800 flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-gray-700 transition-all">
+                    <div class="flex-1 flex flex-col gap-4">
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-azureCyan">Anonymized Case Study</span>
+                            <h3 class="text-xl font-bold text-white mt-1">High-Throughput Enterprise Data Synchronization Pipelines</h3>
+                            <p class="text-xs text-gray-400 mt-1">Role: Software Engineer II</p>
+                        </div>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Architected and optimized data bridges between global corporate platforms and ecosystem ERPs to handle intensive transactional workloads. Focused on deep database refactoring to maximize retrieval speeds, ensuring high system resilience and securing data consistency across distributed environments.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-gray-300">
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">.NET</span>
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">SQL Server</span>
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">RabbitMQ</span>
+                            <span class="px-2.5 py-1 rounded bg-darkBg border border-gray-800">MongoDB</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 border-t border-gray-800/60 pt-3 mt-1">
+                            <div>
+                                <span class="block text-lg font-bold text-white">800K</span>
+                                <span class="text-xs text-gray-500">Messages / Day</span>
+                            </div>
+                            <div>
+                                <span class="block text-lg font-bold text-white">50-80%</span>
+                                <span class="text-xs text-gray-500">SQL Query Perf. Boost</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Diagram 2 -->
+                    <div class="w-full md:w-44 flex items-center justify-center bg-darkBg/40 border border-gray-800/80 rounded-xl p-4 opacity-70 group-hover:opacity-100 transition-opacity">
+                        <div class="flex flex-col gap-2 text-[10px] font-mono text-gray-400 w-full text-center">
+                            <div class="p-1 border border-gray-700 rounded bg-darkBg">Corporate Platforms</div>
+                            <div class="text-gray-600">➔</div>
+                            <div class="p-1 border border-azureBlue/40 rounded bg-azureBlue/5 text-azureCyan">Azure Service Bus</div>
+                            <div class="text-gray-600">➔</div>
+                            <div class="p-1 border border-yellow-600/40 rounded bg-yellow-600/5 text-yellow-500">Databases (SQL/NoSQL)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RIGHT COLUMN (Skills, About and Contact) -->
+        <section class="lg:col-span-5 flex flex-col gap-8">
+            
+            <!-- 4. TECHNICAL EXPERTISE -->
+            <div id="expertise" class="p-6 rounded-2xl bg-cardBg border border-gray-800 flex flex-col gap-6 scroll-mt-28">
+                <h2 class="text-xl font-bold text-white tracking-tight border-b border-gray-800 pb-3">Technical Expertise</h2>
+                
+                <div class="w-full">
+                    <!-- Smart Grid: 1 column on mobile, 2 columns on tablet for good spacing, and back to 1 vertically stacked column on Desktop (LG) to take advantage of side space -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                        
+                        <!-- CARD 1: Backend & Integration -->
+                        <div class="p-4 rounded-xl bg-darkBg/50 border border-gray-800 flex flex-col gap-3 hover:border-azureBlue/30 transition-all">
+                            <div class="flex items-center gap-2 border-b border-gray-800 pb-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-azureCyan shadow-[0_0_8px_#00E5FF]"></div>
+                                <h3 class="text-xs font-bold text-white tracking-wide uppercase">Backend & Integration</h3>
+                            </div>
+                            <ul class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-2 text-xs font-medium text-gray-300">
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-azureCyan/50 font-mono text-[10px]">➔</span> .NET Core / C#</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-azureCyan/50 font-mono text-[10px]">➔</span> ASP.NET Web APIs</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-azureCyan/50 font-mono text-[10px]">➔</span> Azure Service Bus</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-azureCyan/50 font-mono text-[10px]">➔</span> RabbitMQ / SQL Server</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-azureCyan/50 font-mono text-[10px]">➔</span> Distributed Integrations</li>
+                            </ul>
+                        </div>
+
+                        <!-- CARD 2: Frontend Engineering -->
+                        <div class="p-4 rounded-xl bg-darkBg/50 border border-gray-800 flex flex-col gap-3 hover:border-azureBlue/30 transition-all">
+                            <div class="flex items-center gap-2 border-b border-gray-800 pb-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <h3 class="text-xs font-bold text-white tracking-wide uppercase">Frontend Engineering</h3>
+                            </div>
+                            <ul class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-400">
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> Angular</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> TypeScript</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> HTML5 / CSS3</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> SASS / Bootstrap</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> SignalR (Real-time)</li>
+                            </ul>
+                        </div>
+
+                        <!-- CARD 3: Cloud & DevOps -->
+                        <div class="p-4 rounded-xl bg-darkBg/50 border border-gray-800 flex flex-col gap-3 hover:border-azureBlue/30 transition-all">
+                            <div class="flex items-center gap-2 border-b border-gray-800 pb-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <h3 class="text-xs font-bold text-white tracking-wide uppercase">Cloud & DevOps</h3>
+                            </div>
+                            <ul class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-400">
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> Azure Cloud</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> Kubernetes / Docker</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> Azure DevOps (CI/CD)</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> Git / Version Control</li>
+                                <li class="flex items-center gap-2 hover:text-white transition-colors truncate"><span class="text-gray-600 font-mono text-[10px]">➔</span> Automated Testing</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. THE SKILLS CHART -->
+            <div class="p-6 rounded-2xl bg-cardBg border border-gray-800 flex flex-col gap-4">
+                <h2 class="text-xl font-bold text-white tracking-tight border-b border-gray-800 pb-3">The Skills Chart</h2>
+                
+                <div class="flex flex-col gap-3 text-xs scroll-mt-28" id="skillsChartContainer">
+                    <!-- Cleanly generated via TypeScript/JavaScript -->
+                </div>
+            </div>
+
+            <!-- 6. ABOUT ME & GLOBAL MINDSET -->
+            <div id="about" class="p-6 rounded-2xl bg-cardBg border border-gray-800 flex flex-col gap-4 scroll-mt-28">
+                <h2 class="text-xl font-bold text-white tracking-tight border-b border-gray-800 pb-3">About & Global Mindset</h2>
+                
+                <div class="flex items-center gap-4">
+                    <!-- Senior Corporate Avatar Placeholder -->
+                    <div class="w-14 h-14 rounded-full bg-gray-800 border-2 border-azureBlue flex items-center justify-center text-gray-500 overflow-hidden">
+                        <i class="fa-solid fa-user-tie text-2xl text-gray-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white">Cleyton Rodrigues Soares</h4>
+                        <p class="text-xs text-azureCyan">Senior Software Engineer</p>
+                    </div>
+                </div>
+
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    With over 6 years of experience, I specialize in leading the architectural evolution of enterprise systems. My passion lies in refactoring legacy integration monoliths into robust event-driven topologies.
+                </p>
+
+                <div class="flex flex-col gap-3 text-xs mt-2 border-t border-gray-800/60 pt-3">
+                    <div>
+                        <h5 class="font-semibold text-white mb-1">Mentorship Impact</h5>
+                        <p class="text-gray-400">Track record of mentoring developers, optimizing pipeline efficiency and implementing test automation best practices.</p>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold text-white mb-1">FIU USA Academic Immersion</h5>
+                        <p class="text-gray-400">English validated through immersive business and technology frameworks at Florida International University.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. CONTACT SECTION -->
+            <div id="contact" class="p-6 rounded-2xl bg-cardBg border border-gray-800 flex flex-col gap-4 scroll-mt-28">
+                <h2 class="text-xl font-bold text-white tracking-tight border-b border-gray-800 pb-3">Contact</h2>
+                <p class="text-xs text-gray-400">Let's build the future of enterprise software together.</p>
+                
+                <a href="mailto:cleytonrs09@gmail.com" class="text-sm font-semibold text-azureCyan hover:underline flex items-center gap-2 mt-1">
+                    <i class="fa-regular fa-envelope"></i> cleytonrs09@gmail.com
+                </a>
+
+                <div class="flex items-center justify-between border-t border-gray-800/60 pt-4 mt-2">
+                    <span class="text-[10px] text-gray-500">&copy; 2026 Cleyton Rodrigues Soares. All rights reserved.</span>
+                    <div class="flex items-center gap-4 text-gray-400 text-sm">
+                        <a href="https://www.linkedin.com/in/cleytonrodriguessoares/en" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/cleytonrs" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="text-center text-[9px] text-gray-600 mt-1">
+                    Site built with HTML5, Tailwind CSS & TypeScript
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ─── ENCAPSULATED TYPESCRIPT CORE ─── -->
+    <script>
+        // Simulating strict TypeScript compilation natively encapsulated in the browser
+        (function() {
+            "use strict";
+            
+            // Defining the Interface for Skills
+            class SkillMetrics {
+                constructor(category, technologies) {
+                    this.category = category;
+                    this.technologies = technologies;
+                }
+            }
+
+            // Real user data set based on consolidated sections
+            const skillsData = [
+                new SkillMetrics("Backend", [
+                    { name: "C# / .NET Core Architecture", level: 95 },
+                    { name: "Distributed Systems & Event-Driven APIs", level: 90 }
+                ]),
+                new SkillMetrics("Frontend", [
+                    { name: "Angular / TypeScript Engineering", level: 85 },
+                    { name: "Web Standards & UI Styling (HTML5/CSS3/SASS)", level: 75 }
+                ]),
+                new SkillMetrics("Cloud/DevOps", [
+                    { name: "Azure Cloud Architecture & CI/CD Pipelines", level: 85 },
+                    { name: "Containerization & Orchestration (Kubernetes/Docker)", level: 80 }
+                ]),
+                new SkillMetrics("Databases", [
+                    { name: "SQL Server (Advanced Query Optimization & Indexing)", level: 90 },
+                    { name: "NoSQL Databases & Data Persistence (MongoDB)", level: 75 }
+                ])
+            ];
+
+            // Asynchronous Skills Chart Renderer
+            const renderSkillsChart = () => {
+                const container = document.getElementById("skillsChartContainer");
+                if (!container) return;
+
+                container.innerHTML = ""; // Clear loader
+
+                skillsData.forEach(item => {
+                    const categoryWrapper = document.createElement("div");
+                    categoryWrapper.className = "mb-2";
+                    
+                    const title = document.createElement("h3");
+                    title.className = "font-semibold text-white mb-1.5 text-xs tracking-wide uppercase text-gray-400";
+                    title.innerText = item.category;
+                    categoryWrapper.appendChild(title);
+
+                    item.technologies.forEach(tech => {
+                        const techRow = document.createElement("div");
+                        techRow.className = "mb-2";
+
+                        const labelContainer = document.createElement("div");
+                        labelContainer.className = "flex justify-between text-[11px] text-gray-300 mb-0.5";
+                        labelContainer.innerHTML = `<span>${tech.name}</span><span class="text-azureCyan">${tech.level}%</span>`;
+                        techRow.appendChild(labelContainer);
+
+                        // Fluid Progress Bar (Tailwind)
+                        const barBg = document.createElement("div");
+                        barBg.className = "w-full h-1.5 bg-darkBg rounded-full overflow-hidden border border-gray-800";
+                        
+                        const barFill = document.createElement("div");
+                        barFill.className = "h-full bg-gradient-to-r from-azureBlue to-azureCyan rounded-full transition-all duration-1000 ease-out";
+                        barFill.style.width = "0%"; // Initializes to zero for the purpose of input
+                        
+                        barBg.appendChild(barFill);
+                        techRow.appendChild(barBg);
+                        categoryWrapper.appendChild(techRow);
+
+                        // Trigger for the loading animation after insertion into the DOM
+                        setTimeout(() => {
+                            barFill.style.width = `${tech.level}%`;
+                        }, 150);
+                    });
+
+                    container.appendChild(categoryWrapper);
+                });
+            };
+
+            // Initialization of the static application lifecycle
+            document.addEventListener("DOMContentLoaded", () => {
+                renderSkillsChart();
+            });
+        })();
+    </script>
+</body>
+</html>
